@@ -70,6 +70,17 @@ This project involves building a **machine learning model to classify mobile pho
 
 ---
 
+##  Model Saving
+
+The trained SVC pipeline is saved as `mobile_classification.pkl` using `joblib`.  
+You can load this file directly for inference without retraining:
+
+`python
+from joblib import load
+model = load('mobile_classification.pkl')`
+
+---
+
 ##  How to Run
 1. Clone this repository:
    `bash
@@ -79,7 +90,7 @@ This project involves building a **machine learning model to classify mobile pho
 
 ##  Author  
 
-**Lavan kumar Konda**  
+**Lavan Kumar Konda**  
 -  Student at NIT Andhra Pradesh  
 -  Passionate about Data Science, Machine Learning, and AI  
 -  [LinkedIn](https://www.linkedin.com/in/lavan-kumar-konda/)
